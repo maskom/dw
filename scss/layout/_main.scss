@@ -1,5 +1,5 @@
 html {
-  font-size: 14px;
+  font-size: 15px;
 
   @include media-breakpoint-up(md) {
     font-size: 16px;
@@ -18,5 +18,30 @@ img {
 .color {
   &-blue {
     color: $blue;
+  }
+  &-gray2 {
+    color: $gray2;
+  }
+}
+
+.social-media {
+  &-icon {
+    text-indent: -10000px;
+    background-image: url("/images/social-media.png");
+    display: block;
+    width: 56px;
+    height: 56px;
+  }
+
+  .socmed-facebook {
+    background-position: -78px 0
+  }
+
+  .socmed-twitter {
+    background-position: -155px 0;
+  }
+
+  .socmed-youtube {
+    background-position: -233px 0;
   }
 }

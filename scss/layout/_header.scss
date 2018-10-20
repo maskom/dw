@@ -23,11 +23,11 @@
     margin: 0 auto;
     margin-left: -20px;
 
+    @include vertical-align(relative, 50%, 50%)
+
     @include media-breakpoint-up(lg) {
       width: 400px;
       height: auto;
-
-      @include vertical-align(relative, 50%, 50%)
     }
   }
 
@@ -39,11 +39,7 @@
         font-weight: 900;
         font-size: rem(48);
         -webkit-text-stroke: 2px #fff;
-        text-shadow:
-                -1px -1px 0 #fff,
-                1px -1px 0 #fff,
-                -1px 1px 0 #fff,
-                1px 1px 0 #fff;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
       }
     }
 
