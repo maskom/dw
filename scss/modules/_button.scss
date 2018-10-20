@@ -14,7 +14,7 @@
     border-color: #1472c5;
     color: #fff;
 
-    @include linear-gradient(90deg, #265caf, #0e84e1);
+    @include linear-gradient(to right, #265caf, #0e84e1);
 
     &:focus,
     &:hover {

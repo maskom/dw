@@ -1,0 +1,15 @@
+.col-ct-3 {
+  @include media-breakpoint-up(lg) {
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+
+  @include media-breakpoint-up(xl) {
+    -ms-flex: 0 0 22%;
+    flex: 0 0 22%;
+    max-width: 22%;
+  }
+
+}
+
