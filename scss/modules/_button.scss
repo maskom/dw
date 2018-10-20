@@ -1,0 +1,24 @@
+.btn {
+  border-radius: 30px;
+  border: 4px solid;
+  padding: 11px 35px;
+  font-size: rem(18);
+  font-weight: 600;
+
+  &:active,
+  &:focus {
+    box-shadow: none;
+  }
+
+  &-blue {
+    border-color: #1472c5;
+    color: #fff;
+
+    @include linear-gradient(90deg, #265caf, #0e84e1);
+
+    &:focus,
+    &:hover {
+      color: #fff;
+    }
+  }
+}
