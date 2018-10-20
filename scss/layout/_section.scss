@@ -5,20 +5,21 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  &-inner {
+    @include vertical-align(relative, 20%, 20%)
+  }
+
   .logo {
     margin: 0 auto;
     margin-left: -20px;
 
-    @include vertical-align(relative, 50%, 50%)
-
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       width: 400px;
       height: auto;
     }
   }
 
   .heading {
-    @include vertical-align(relative, 70%, 70%);
 
     header {
       h1 {
@@ -26,6 +27,11 @@
         font-size: rem(48);
         -webkit-text-stroke: 2px #fff;
         text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 40px;
+          line-height: 1;
+        }
       }
     }
 
