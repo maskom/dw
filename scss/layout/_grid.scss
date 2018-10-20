@@ -13,3 +13,11 @@
 
 }
 
+.col-card-match {
+  @include media-breakpoint-up(xl) {
+    -ms-flex: 0 0 42.41%;
+    flex: 0 0 42.41%;
+    max-width: 42.41%;
+  }
+}
+
