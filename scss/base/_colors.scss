@@ -1,0 +1,41 @@
+// Color Palette
+// examples based on the official Sass styleguide
+
+// descriptive colors
+// =============
+
+$white:                     #fff;
+$black:                     #000;
+$gray : 					#3b3b3b;
+$blue :                     #214b8d;
+$yellow: 					#edaf00;
+
+
+
+// main color palette
+// =============
+$color-primary:             $yellow;
+$color-secondary:           $gray;
+$color-accent:              $black;
+$color-shadow:              rgba($black, .125);
+$color-note:                #666;
+
+// Common colors
+$color-background:          $white;
+$color-text:                $black;
+
+
+// Links
+$color-link:                $color-primary;
+$color-link-hover:          darken($color-primary, 10%);
+
+
+// Selections
+$color-selection:           #b3d4fc;
+
+// Messages
+$color-message:             #f4ecbb;
+$color-success:             #2cde2c;
+$color-warning:             #cf8600;
+$color-important:           #d00;
+$color-notice:              #66b;

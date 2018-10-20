@@ -1,0 +1,40 @@
+.header {
+  nav {
+    ul {
+      li {
+        a {
+          color: $gray;
+          font-weight: 500;
+          font-size: rem(15);
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  min-height: 904px;
+  background-image: url("/images/bg-banner-1_2_1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .logo {
+    margin: 0 auto;
+    @include media-breakpoint-up(lg) {
+      width: 400px;
+      height: auto;
+
+      @include vertical-align(relative, 50%, 50%)
+    }
+  }
+
+  .heading {
+    header {
+      h1 {
+        font-weight: 800;
+        font-size: rem(48);
+      }
+    }
+  }
+}
