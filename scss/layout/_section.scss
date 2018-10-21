@@ -81,3 +81,7 @@
 
   @include linear-gradient(to bottom, #ececec 0%, #fff 50%, #f8fdff 100%);
 }
+
+.tema {
+  @extend .category;
+}

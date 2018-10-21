@@ -11,4 +11,9 @@ jQuery( document ).ready(function($) {
         $('.container-card-category .card-category').removeClass("active");
         $(this).parents('.card-category').addClass("active");
     });
+
+    $('.container-option-tema .option-box').click(function(){
+        $('.container-option-tema .option-box').removeClass("active");
+        $(this).addClass("active");
+    });
 });
