@@ -16,6 +16,10 @@
     @include vertical-align(relative);
   }
 
+  &.footer-page-inner {
+    background-image: url("/images/bg-footer-2.jpg");
+  }
+
   nav {
     ul {
       li {

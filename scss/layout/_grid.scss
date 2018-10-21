@@ -9,6 +9,12 @@
     -ms-flex: 0 0 22%;
     flex: 0 0 22%;
     max-width: 22%;
+
+    .container-card-category & {
+      -ms-flex: 0 0 21%;
+      flex: 0 0 21%;
+      max-width: 21%;
+    }
   }
 
 }

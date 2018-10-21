@@ -1,4 +1,13 @@
 .header {
+
+  &.header-blue {
+    background-color: $blue;
+
+    a {
+      color: #fff;
+    }
+  }
+
   nav {
     ul {
       li {

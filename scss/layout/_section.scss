@@ -9,6 +9,10 @@
     @include vertical-align(relative, 20%, 20%)
   }
 
+  .btn {
+    padding: 11px 35px;
+  }
+
   .logo {
     margin: 0 auto;
     margin-left: -20px;
@@ -67,4 +71,13 @@
 
 .jadwal {
   background-color: $blue;
+}
+
+.category {
+  @extend .info;
+
+  border-top: 4px solid #fff;
+  border-bottom: 0;
+
+  @include linear-gradient(to bottom, #ececec 0%, #fff 50%, #f8fdff 100%);
 }

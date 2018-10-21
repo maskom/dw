@@ -1,3 +1,12 @@
+.card-bg-blue {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0px 1px 26px -5px rgba(0,0,0,0.75);
+  position: relative;
+  padding: 11px;
+
+  @include linear-gradient(to bottom, #19336f, #2968b5);
+}
 .card_artis {
   height: 257px;
   width: 244px;
@@ -8,13 +17,6 @@
   }
 
   &_bg {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    box-shadow: 0px 1px 26px -5px rgba(0,0,0,0.75);
-    position: relative;
-    padding: 11px;
-
-    @include linear-gradient(to bottom, #19336f, #2968b5);
 
     &::after {
       content: '';
@@ -148,6 +150,45 @@
       @include media-breakpoint-down(md) {
         font-size: 16px;
       }
+    }
+  }
+}
+
+.card-category {
+  width: 244px;
+  height: 100%;
+
+  @include media-breakpoint-between(sm, md) {
+    width: 220px;
+  }
+
+  &.active {
+    .card-category-bg {
+      @include linear-gradient(to right, #5d5d5d, #7f7f7f);
+    }
+  }
+
+  &-bg {
+    transition: all;
+    @include linear-gradient(to right, #19336f, #2968b5);
+  }
+
+  .photo_box {
+    color: #fff;
+    h3 {
+      font-size: rem(20);
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      font-size: rem(14);
+      line-height: 1.3;
+    }
+
+    &-img {
+      height: 227px;
+      width: 100%;
     }
   }
 }

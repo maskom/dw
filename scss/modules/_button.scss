@@ -1,13 +1,20 @@
 .btn {
   border-radius: 30px;
   border: 4px solid;
-  padding: 11px 35px;
+  padding: 8px 30px;
   font-size: rem(18);
   font-weight: 600;
+  transition: all;
+
+  @include media-breakpoint-up(sm) {
+    padding: 12px 35px;
+  }
 
   &:active,
-  &:focus {
+  &:focus,
+  &:hover {
     box-shadow: none;
+    opacity: 0.8;
   }
 
   &-blue {
@@ -21,4 +28,44 @@
       color: #fff;
     }
   }
+
+  &-gray {
+    border-color: #757576;
+    color: #fff;
+
+    @include linear-gradient(to right, #5d5d5d, #7f7f7f);
+
+    &:focus,
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &-width {
+    @include media-breakpoint-up(sm) {
+      width: 245px;
+    }
+  }
+
+  &-shadow-blue {
+    box-shadow: 0px 12px 44px -9px rgba(13,135,229,1);
+  }
+
+  &-shadow-gray {
+    box-shadow: 0px 12px 44px -9px rgba(127,127,127,1);
+  }
+
+  &-card {
+    border: 0;
+    border-radius: 0;
+    font-weight: 700;
+    color: #000;
+    font-size: rem(21);
+    line-height: 1;
+    box-shadow: 0px 3px 26px -5px rgba(0,0,0,0.75);
+    height: 49px;
+
+    @include linear-gradient(to right, #dfdfdf, #f0f0f0);
+  }
+
 }

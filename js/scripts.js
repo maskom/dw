@@ -6,4 +6,9 @@ jQuery( document ).ready(function($) {
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
     });
+
+    $('.container-card-category .card-category button').click(function(){
+        $('.container-card-category .card-category').removeClass("active");
+        $(this).parents('.card-category').addClass("active");
+    });
 });
