@@ -8,6 +8,21 @@
     }
   }
 
+  .navbar-collapse {
+    @include media-breakpoint-up(md) {
+      flex-grow: 0;
+    }
+  }
+
+  .brand {
+    img {
+      width: 80%;
+      @include media-breakpoint-up(lg) {
+        width: 100%;
+      }
+    }
+  }
+
   nav {
     ul {
       li {

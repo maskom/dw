@@ -69,3 +69,28 @@
   }
 
 }
+
+.navbar-toggler {
+
+  &:focus {
+    outline: none;
+  }
+
+  .home & {
+    span {
+      background-color: #000;
+    }
+  }
+
+  span {
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+    display: block;
+    margin-bottom: 5px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
