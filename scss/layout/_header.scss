@@ -36,3 +36,18 @@
   }
 }
 
+.navbar-collapse {
+  @include media-breakpoint-down(sm) {
+    .home & {
+      z-index: 2;
+      position: relative;
+      padding: 0 20px;
+      background-color: rgba($blue, 0.8);
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+

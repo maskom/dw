@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pengisian Data</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header header-blue navbar-expand-md pt-2 pb-2 pl-3 pr-3 p-md-3 position-relative w-100" id="header">
+    <div class="container">
+        <div class="d-md-flex navbar p-0 justify-content-between align-items-center">
+            <a href="/" class="brand"><img src="images/logo-downy-white.png" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav pt-3 pb-3 p-md-0">
+                    <li class="nav-item mb-3 mb-md-0"><a href="/">Home</a></li>
+                    <li class="nav-item mb-3 mb-md-0 pl-md-5"><a href="/#info">Info</a></li>
+                    <li class="nav-item mb-3 mb-md-0 pl-md-5"><a href="/#jadwal">Jadwal Pertandingan</a></li>
+                    <li class="nav-item mb-3 mb-md-0 pl-md-5"><a href="/category.html">Daftar Sekarang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <section class="section syarat pt-md-5 pb-5" id="syarat">
+        <div class="container">
+            <header class="text-center mt-5 mb-4 d-inline-block w-100">
+                <h1 class="color-blue font-weight-bold">Pengisian Data</h1>
+                <div class="intro mt-4 ml-auto mr-auto ">
+                    <p>Bertanding satu tim dengan atau Melawan Andrew dan Jason White</p>
+                </div>
+            </header>
+            <div class="container-card-category container-pilih-tim mt-4 mb-5">
+                <div class="d-flex justify-content-center align-items-center">
+                    <form id="input-data" >
+                        <div class="row">
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <header class="mb-4"><h3><strong>Data orang tua</strong></h3></header>
+                                <div class="form-group">
+                                    <label for="namaOrtu" class="sr-only">Nama Sesuai KTP</label>
+                                    <input type="text" class="form-control" id="namaOrtu" placeholder="Nama Sesuai KTP">
+                                </div>
+                                <div class="form-group pb-3">
+                                   <strong class="d-block pb-2">Jenis Kelamin</strong>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="lakilakicheck" value="laki-laki">
+                                        <label class="form-check-label" for="lakilakicheck">Laki-laki</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="perempuancheck" value="perampuan">
+                                        <label class="form-check-label" for="perempuancheck">Perampuan</label>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-row pt-3 pb-2">
+                                    <strong class="d-block pb-2 w-100">Tanggal Lahir</strong>
+
+                                    <div class="form-group col-md-4">
+                                        <label for="inputTanggal" class="sr-only">Tanggal</label>
+                                        <select id="inputTanggal" class="form-control">
+                                            <option selected>Tanggal</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputBulan" class="sr-only">Bulan</label>
+                                        <select id="inputBulan" class="form-control">
+                                            <option selected>Bulan</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputTahun" class="sr-only">Tahun</label>
+                                        <select id="inputTahun" class="form-control">
+                                            <option selected>Tahun</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group pb-2">
+                                    <label for="email" class="sr-only">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                </div>
+                                <div class="form-group pb-2">
+                                    <label for="ktp" class="sr-only">No KTP</label>
+                                    <input type="number" class="form-control" id="ktp" placeholder="No KTP">
+                                </div>
+                                <div class="form-group pb-2">
+                                    <label for="noHP" class="sr-only">No Handphone</label>
+                                    <input type="number" class="form-control" id="noHP" placeholder="No Handphone">
+                                </div>
+                                <div class="form-group pb-2">
+                                    <label for="alamat" class="sr-only">Alamat Lengkap</label>
+                                    <input type="text" class="form-control" id="alamat" placeholder="Alamat Lengkap">
+                                </div>
+                                <div class="form-group">
+                                    <label for="uploadFoto">Upload foto</label>
+                                    <input type="file" class="form-control-file" id="uploadFoto">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <header class="mb-4"><h3><strong>Data Anak</strong></h3></header>
+                                <div class="form-group">
+                                    <label for="namaAnak" class="sr-only">Nama Sesuai Akte</label>
+                                    <input type="text" class="form-control" id="namaAnak" placeholder="Nama Sesuai Akte">
+                                </div>
+                                <div class="form-group pb-3">
+                                    <strong class="d-block pb-2">Jenis Kelamin</strong>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="lakilakicheck" value="laki-laki">
+                                        <label class="form-check-label" for="lakilakicheck">Laki-laki</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="perempuancheck" value="perampuan">
+                                        <label class="form-check-label" for="perempuancheck">Perampuan</label>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-row pt-3 pb-2">
+                                    <strong class="d-block pb-2 w-100">Tanggal Lahir</strong>
+
+                                    <div class="form-group col-md-4">
+                                        <label for="inputTanggal" class="sr-only">Tanggal</label>
+                                        <select id="inputTanggal" class="form-control">
+                                            <option selected>Tanggal</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputBulan" class="sr-only">Bulan</label>
+                                        <select id="inputBulan" class="form-control">
+                                            <option selected>Bulan</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputTahun" class="sr-only">Tahun</label>
+                                        <select id="inputTahun" class="form-control">
+                                            <option selected>Tahun</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="uploadFoto">Upload foto</label>
+                                    <input type="file" class="form-control-file" id="uploadFoto">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="button-wrap pt-4 d-md-flex flex-row justify-content-center text-center align-items-center">
+                <a href="/posisi.html" class="mr-md-3 btn btn-gray btn-shadow-gray btn-width text-uppercase">Kembali</a>
+                <a href="/riwayat-orang-tua.html" class="ml-md-3 btn btn-blue btn-shadow-blue btn-width text-uppercase">Lanjut</a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer id="footer" class="footer footer-page-inner pt-5 pb-5">
+    <div class="container h-100">
+        <div class="footer-inner">
+            <nav class="d-flex justify-content-center text-center align-items-center mb-4">
+                <ul class="nav">
+                    <li class="pr-2 pr-md-3"><a href="/">Syarat dan Ketentuan</a></li>
+                    <li><span class="color-gray2">|</span></li>
+                    <li class="pl-2 pl-md-3"><a href="#">Kebijakan Privasi</a></li>
+                </ul>
+            </nav>
+            <div class="social-media d-flex justify-content-center text-center align-items-center pt-2 mb-4">
+                <ul class="nav ">
+                    <li><a href="htpps://instagram.com" target="_blank" class="social-media-icon socmed-instagram">Instagram</a></li>
+                    <li class="pl-3 pl-md-4"><a href="https://facebook.com" target="_blank" class="social-media-icon socmed-facebook ">Facebook</a></li>
+                    <li class="pl-3 pl-md-4"><a href="https://twitter.com" target="_blank" class="social-media-icon socmed-twitter ">Twitter</a></li>
+                    <li class="pl-3 pl-md-4"><a href="https://youtube.com" target="_blank" class="social-media-icon socmed-youtube">Youtube</a></li>
+                </ul>
+            </div>
+            <div class="footer-info justify-content-center text-center align-items-center pt-2">
+                <span>&copy; Copyright Downey Sport 2018. All Right Reserved. </span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/min/scripts.min.js"></script>
+</body>
+</html>

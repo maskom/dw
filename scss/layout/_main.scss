@@ -52,7 +52,7 @@ img {
 .social-media {
   &-icon {
     text-indent: -10000px;
-    background-image: url("/images/social-media.png");
+    background-image: url("../images/social-media.png");
     display: block;
     width: 56px;
     height: 56px;
@@ -68,5 +68,17 @@ img {
 
   .socmed-youtube {
     background-position: -233px 0;
+  }
+}
+
+.w-66 {
+  @include media-breakpoint-up(md) {
+    width: 66% !important;
+  }
+}
+
+.container-biodata {
+  @include media-breakpoint-up(md) {
+    width: 75%;
   }
 }

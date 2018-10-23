@@ -1,0 +1,9 @@
+#input-data {
+  @include media-breakpoint-up(md) {
+    width: 75%;
+  }
+}
+
+.riwayat {
+  @extend #input-data;
+}

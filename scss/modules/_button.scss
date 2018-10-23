@@ -5,6 +5,7 @@
   font-size: rem(18);
   font-weight: 600;
   transition: all;
+  white-space: normal;
 
   @include media-breakpoint-up(sm) {
     padding: 12px 35px;
